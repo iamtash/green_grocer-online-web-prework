@@ -53,5 +53,5 @@ def checkout(cart, coupons)
   discounted_cart.each {|item, attributes|
     total += attributes[:count] * attributes[:cost]
   }
-  total * 0.90 if total > 100 
+  total * 0.90 if total > 100
 end
