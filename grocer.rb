@@ -52,7 +52,7 @@ def checkout(cart, coupons)
   total = 0
   discounted_cart.each {|item, attributes|
     binding.pry
-    total += attributes[:count] * attributes[:cost]
+    total += attributes[:count] * attributes[:price]
   }
   total * 0.90 if total > 100
   total
